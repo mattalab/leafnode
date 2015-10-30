@@ -6,5 +6,10 @@ python:
 services:
   - mongodb
 
+install:
+  - npm install fibers
+  - npm install fibers-utils
+  - npm install mongodb-uri
+
 script: 
   - node ./test/all.js
