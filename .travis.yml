@@ -1,0 +1,15 @@
+language: node_js
+
+python:
+  - "0.10"
+
+services:
+  - mongodb
+
+before_script:
+  - npm install fibers
+  - npm install fibers-utils
+  - npm install mongodb-uri
+
+script: 
+  - node ./test/all.js
